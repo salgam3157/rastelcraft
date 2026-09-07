@@ -8,8 +8,8 @@
 }
 
 body {
-    background-color: #f0f9ff; /* Çok açık mavi arka plan */
-    color: #1e293b;
+    background-color: #f0f9ff; 
+    color: #0f172a;
 }
 
 /* Navigasyon Menüsü */
@@ -19,16 +19,17 @@ body {
     align-items: center;
     background-color: #ffffff;
     padding: 15px 5%;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(2, 132, 199, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #e0f2fe;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #0284c7; /* Açık mavi */
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0284c7;
 }
 
 .nav-links {
@@ -39,52 +40,56 @@ body {
 }
 
 .nav-links a {
-    color: #64748b;
+    color: #0284c7;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: #0284c7;
+    color: #0369a1;
 }
 
-/* Navigasyondaki Discord Butonu */
 .discord-btn {
-    background-color: #5865F2;
+    background-color: #38bdf8 !important;
     color: white !important;
-    padding: 8px 16px;
-    border-radius: 5px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
     transition: background-color 0.3s !important;
 }
 
 .discord-btn:hover {
-    background-color: #404eed;
+    background-color: #0284c7;
 }
 
-/* Giriş Bölümü (Hero) */
+/* Giriş Bölümü - Gönderdiğiniz Logo ve Mavi Temaya Uygun Tasarlandı */
 .hero-section {
-    background: linear-gradient(rgba(2, 132, 199, 0.8), rgba(255, 255, 255, 0.9)), 
-                url('https://unsplash.com') no-repeat center center/cover;
-    height: 70vh;
+    background: linear-gradient(rgba(240, 249, 255, 0.85), rgba(255, 255, 255, 0.9)), 
+                url('https://yt3.googleusercontent.com/DcaaxOpJ_uASJcORoKCxzWk34-3QQOUu5FohdNtEwh2fF6UYS9QV01JspMozAj4UWuYhYlCi5bo=s120-c-k-c0x00ffffff-no-rj') no-repeat center center;
+    background-size: contain; /* Logonun bozulmadan görünmesini sağlar */
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 0 20px;
+    border-bottom: 3px solid #bae6fd;
+    background-color: #f0f9ff;
 }
 
 .hero-content h1 {
     font-size: 3.5rem;
-    color: #0f172a;
+    color: #0369a1;
     margin-bottom: 15px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-weight: 800;
 }
 
 .hero-content p {
     font-size: 1.3rem;
-    color: #334155;
+    color: #0284c7;
     margin-bottom: 35px;
+    font-weight: 500;
 }
 
 .hero-buttons {
@@ -100,14 +105,14 @@ body {
     padding: 14px 32px;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1rem;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(2, 132, 199, 0.2);
 }
 
 .btn-store {
@@ -121,13 +126,12 @@ body {
 
 .btn-discord {
     background-color: #ffffff;
-    color: #5865F2;
-    border: 2px solid #5865F2;
+    color: #0284c7;
+    border: 2px solid #0284c7;
 }
 
 .btn-discord:hover {
-    background-color: #5865F2;
-    color: white;
+    background-color: #e0f2fe;
 }
 
 /* Mağaza Bölümü */
@@ -144,12 +148,12 @@ body {
 
 .section-title h2 {
     font-size: 2.5rem;
-    color: #0f172a;
+    color: #0369a1;
     margin-bottom: 10px;
 }
 
 .section-title p {
-    color: #64748b;
+    color: #0284c7;
     font-size: 1.1rem;
 }
 
@@ -163,33 +167,33 @@ body {
 /* VIP Ürün Kartı */
 .card {
     background-color: #ffffff;
-    border: 2px solid #e2e8f0;
-    border-radius: 12px;
+    border: 2px solid #bae6fd;
+    border-radius: 16px;
     padding: 35px 25px;
     text-align: center;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+    box-shadow: 0 4px 6px rgba(2, 132, 199, 0.05);
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(2, 132, 199, 0.1);
-    border-color: #7dd3fc;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(2, 132, 199, 0.15);
+    border-color: #38bdf8;
 }
 
-/* Özel Tasarımlı Rastel VIP Kartları */
 .special-card {
-    border-color: #bae6fd;
-    background: linear-gradient(#ffffff, #f0f9ff);
+    border-color: #38bdf8;
+    background: linear-gradient(#ffffff, #e0f2fe);
 }
 
-/* Rozetler (Popüler vb.) */
+/* Rozetler */
 .badge {
     position: absolute;
     top: 15px;
     right: -30px;
-    background-color: #0284c7;
+    background-color: #38bdf8;
     color: white;
     padding: 4px 30px;
     font-size: 0.75rem;
@@ -198,17 +202,17 @@ body {
 }
 
 .badge.gold {
-    background-color: #ea580c;
+    background-color: #0284c7;
 }
 
 .card h3 {
-    font-size: 1.6rem;
-    color: #0f172a;
+    font-size: 1.7rem;
+    color: #0369a1;
     margin-bottom: 15px;
 }
 
 .price {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 800;
     color: #0284c7;
     margin-bottom: 15px;
@@ -217,11 +221,11 @@ body {
 .price span {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #64748b;
+    color: #0369a1;
 }
 
 .card p {
-    color: #64748b;
+    color: #0284c7;
     font-size: 0.95rem;
     margin-bottom: 30px;
     line-height: 1.5;
@@ -247,10 +251,12 @@ body {
 
 /* Alt Bilgi */
 .footer {
-    background-color: #0f172a;
-    color: #94a3b8;
+    background-color: #ffffff;
+    color: #0284c7;
     text-align: center;
     padding: 25px;
     margin-top: 60px;
+    border-top: 2px solid #e0f2fe;
+    font-weight: bold;
 }
 
